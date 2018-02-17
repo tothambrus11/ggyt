@@ -19,129 +19,150 @@ header h1, header h2{
 }
 
 /* Menü */
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
 nav {
-  background: #0f52ba;
-  width: auto;
-  box-sizing: content-box;
+	background: #0f52ba;
+	width: auto;
+	box-sizing: content-box;
 }
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  display: block;
-  zoom: 1;
-  font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	zoom: 1;
+	font-size: 0;
 }
 nav ul:after {
-  content: " ";
-  display: block;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	clear: both;
+	visibility: hidden;
 }
 nav ul li {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
 }
 nav.align-right ul li {
-  float: right;
+  	float: right;
 }
 nav.align-center ul {
-  text-align: center;
-  font-size: 0;
+	text-align: center;
+	font-size: 0;
 }
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 15px 25px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-  position: relative;
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+	-webkit-transition: color .25s;
+	-moz-transition: color .25s;
+	-ms-transition: color .25s;
+	-o-transition: color .25s;
+	transition: color .25s;
 }
 nav ul li a:hover {
-  color: #333;
+	color: #333;
 }
 nav ul li a:hover:before {
-  width: 100%;
+  	width: 100%;
 }
 nav ul li a:after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -3px;
-  top: 19px;
-  height: 6px;
-  width: 6px;
-  background: #fff;
-  opacity: .5;
+	content: "";
+	display: block;
+	position: absolute;
+	right: -3px;
+	top: 19px;
+	height: 6px;
+	width: 6px;
+	background: #fff;
+	opacity: .5;
 }
 nav ul li a:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 0;
-  background: #333;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background: #333;
+	-webkit-transition: width .25s;
+	-moz-transition: width .25s;
+	-ms-transition: width .25s;
+	-o-transition: width .25s;
+	transition: width .25s;
 }
 nav ul li.last > a:after,
 nav ul li:last-child > a:after {
-  display: none;
+	display: none;
 }
 nav ul li.active a {
-  color: #333;
+	color: #333;
 }
 nav ul li.active a:before {
-  width: 100%;
+	width: 100%;
 }
 nav.align-right li.last > a:after,
 nav.align-right li:last-child > a:after {
-  display: block;
+	display: block;
 }
 nav.align-right li:first-child a:after {
-  display: none;
+	display: none;
+}
+nav #showmenu{
+	display: none;
+	width: 100%;
+	box-sizing: border-box;
+	background: #0f52ba;
+	border: none;
+	padding: 10px;
+	color: white;
+	font-family: 'Open Sans';
+	cursor: pointer;
+}
+nav #showmenu:focus{
+	outline: none;
+}
+nav #showmenu:hover{
+	transition: 0.3s;
+	background-color: #184996;
 }
 @media screen and (max-width: 768px) {
-  nav ul li {
-    float: none;
-    display: block;
-  }
-  nav ul li a {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-bottom: 1px solid #fb998c;
-  }
-  nav ul li.last > a,
-  nav ul li:last-child > a {
-    border: 0;
-  }
-  nav ul li a:after {
-    display: none;
-  }
-  nav ul li a:before {
-    display: none;
-  }
+	#menu{
+		display: none;
+	}
+  	nav ul li{
+  		float: none;
+  	}
+	nav ul li a {
+    	width: 100%;
+    	-moz-box-sizing: border-box;
+    	-webkit-box-sizing: border-box;
+    	box-sizing: border-box;
+		border-bottom: 1px solid #184996;
+	}
+  	nav ul li.last > a,
+  	nav ul li:last-child > a {
+		border: 0;
+	}
+  	nav ul li a:after {
+    	display: none;
+  	}
+  	nav ul li a:before {
+		display: none;
+  	}
+  	nav #showmenu{
+  		display: block;
+  	}
 }
 
 /*
@@ -202,7 +223,7 @@ h1, h2, h3, h4, h5, h6{
 @media only screen and (max-width: 800px){
 	.page-container{
 		width: 100%;
-		box-sizing: content-box;
+		box-sizing: border-box;
 	}
 }
 

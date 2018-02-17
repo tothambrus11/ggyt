@@ -3,7 +3,7 @@
 	<h2>Bánki Donát Gépész és Biztonságtechnikai Mérnöki Kar Gépgyártástechnológiai Szakcsoport</h2>
 </header>
 <nav>
-	<ul>
+	<ul id="menu">
 		<li><a href="<?php echo HOME_URL; ?>" class="menu-item">Kezdőlap</a></li>
 		<li><a href="<?php echo HOME_URL; ?>hirek/" class="menu-item">Hírek</a></li>
 		<li><a href="<?php echo HOME_URL; ?>tanszek/" class="menu-item">A tanszék</a></li>
@@ -15,5 +15,10 @@
 		<li><a href="<?php echo HOME_URL; ?>kutatasi-tevekenyseg/" class="menu-item">Kutatási tevékenység</a></li>
 		<li><a href="<?php echo HOME_URL; ?>kapcsolat/" class="menu-item">Kapcsolat</a></li>	
 	</ul>
-	
+	<script type="text/javascript">
+		menuDisplay = false;
+	</script>
+	<button id="showmenu" onclick="document.getElementById('menu').style.display = menuDisplay ? 'none' : 'block'; menuDisplay = !menuDisplay">
+		&#9776; Menü
+	</button>
 </nav>
