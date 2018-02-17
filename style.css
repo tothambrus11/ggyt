@@ -1,29 +1,192 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
+html, body{
+	margin: 0;
+	padding: 0;
+}
 body{
 	background-color: #eff4fc;
 }
 
+
+/*Header*/
+header{
+	text-align: center;
+}
+header h1, header h2{
+	font-family: 'Roboto Slab' !important;
+}
+
+/* Menü */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+nav {
+  background: #0f52ba;
+  width: auto;
+  box-sizing: content-box;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+  font-size: 0;
+}
+nav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+nav.align-right ul li {
+  float: right;
+}
+nav.align-center ul {
+  text-align: center;
+  font-size: 0;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+nav ul li a:hover {
+  color: #333;
+}
+nav ul li a:hover:before {
+  width: 100%;
+}
+nav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #fff;
+  opacity: .5;
+}
+nav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+nav ul li.last > a:after,
+nav ul li:last-child > a:after {
+  display: none;
+}
+nav ul li.active a {
+  color: #333;
+}
+nav ul li.active a:before {
+  width: 100%;
+}
+nav.align-right li.last > a:after,
+nav.align-right li:last-child > a:after {
+  display: block;
+}
+nav.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  nav ul li {
+    float: none;
+    display: block;
+  }
+  nav ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  nav ul li.last > a,
+  nav ul li:last-child > a {
+    border: 0;
+  }
+  nav ul li a:after {
+    display: none;
+  }
+  nav ul li a:before {
+    display: none;
+  }
+}
+
+/*
+nav{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #0f52ba;
+	text-align: center;
+	box-shadow: 0 3px 10px #333;
+}
+.menu-item{
+	padding: 10px 20px;
+	display: inline-block;
+	font-family: 'Roboto Slab';
+	color: white;
+	transition: 0.3s;
+}
+.menu-item:hover{
+	background-color: #184996;
+}
+.active-menu-item{
+	background-color: #184996;
+}*/
+
+
+/* Oldal */
 h1, h2, h3, h4, h5, h6{
 	font-weight: 400;
-	font-family: Arimo, sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 }
-h1{
+.page-container h1{
 	font-size: 50px;
 }
-h2{
+.page-container h2{
 	font-family: 33px;
 	border-bottom: 3px solid black;
 	padding-left: 5px;
 }
-h3{
+.page-container h3{
 	font-family: 22px;
 	border-bottom: 2px solid #555;
 	margin-left: 10px;
 	padding-left: 5px;
 }
-
-p{
+.page-container p{
 	font-family: 'open sans', Arial, sans-serif;
 	margin-left: 20px;
 }
@@ -42,3 +205,4 @@ p{
 		box-sizing: content-box;
 	}
 }
+
