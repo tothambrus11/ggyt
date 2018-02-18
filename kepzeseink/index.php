@@ -6,9 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Képzéseink</title>
-	<link rel="stylesheet" type="text/css" href="../style.css">
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-	
+	<link rel="stylesheet" type="text/css" href="../style.css">	
 </head>
 <body>
 	<?php

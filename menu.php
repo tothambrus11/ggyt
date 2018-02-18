@@ -8,6 +8,7 @@
 		<li><a href="<?php echo HOME_URL; ?>hirek/" class="menu-item">Hírek</a></li>
 		<li><a href="<?php echo HOME_URL; ?>tanszek/" class="menu-item">A tanszék</a></li>
 		<li><a href="<?php echo HOME_URL; ?>kepzeseink/" class="menu-item">Képzéseink</a></li>
+		<li><a href="<?php echo HOME_URL; ?>tantargyak/" class="menu-item">Tantárgyak</a></li>
 		<li><a href="<?php echo HOME_URL; ?>munkatarsak/" class="menu-item">Munkatársak</a></li>
 		<li><a href="<?php echo HOME_URL; ?>hallgatoknak/" class="menu-item">Hallgatóknak</a></li>
 		<li><a href="<?php echo HOME_URL; ?>szakdolgozat/" class="menu-item">Szakdolgozat</a></li>
