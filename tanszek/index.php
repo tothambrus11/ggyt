@@ -796,6 +796,8 @@
 			<a href="img/image090.jpg"><img class="grid-item" src="img/image090.jpg"></a>
 		</center>
 	</div>
-	
+	<?php
+		include("../footer.php");
+	?>
 </body>
 </html>

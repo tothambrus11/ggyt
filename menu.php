@@ -12,7 +12,7 @@
 		<li><a href="<?php echo HOME_URL; ?>hallgatoknak/" class="menu-item">Hallgatóknak</a></li>
 		<li><a href="<?php echo HOME_URL; ?>szakdolgozat/" class="menu-item">Szakdolgozat</a></li>
 		<li><a href="<?php echo HOME_URL; ?>szakmai-gyakorlat/" class="menu-item">Szakmai gyakorlat</a></li>
-		<li><a href="<?php echo HOME_URL; ?>kutatasi-tevekenyseg/" class="menu-item">Kutatási tevékenység</a></li>
+		<li><a href="<?php echo HOME_URL; ?>kutatasi-tevekenyseg/" class="menu-item">Kutatási tevékenységünk</a></li>
 		<li><a href="<?php echo HOME_URL; ?>kapcsolat/" class="menu-item">Kapcsolat</a></li>	
 	</ul>
 	<script type="text/javascript">
