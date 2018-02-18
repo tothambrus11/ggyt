@@ -7,6 +7,8 @@ html, body{
 }
 body{
 	background-color: #eff4fc;
+	font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 0.9em;
 }
 
 
@@ -166,29 +168,6 @@ nav #showmenu:hover{
   	}
 }
 
-/*
-nav{
-	width: 100%;
-	box-sizing: border-box;
-	background-color: #0f52ba;
-	text-align: center;
-	box-shadow: 0 3px 10px #333;
-}
-.menu-item{
-	padding: 10px 20px;
-	display: inline-block;
-	font-family: 'Roboto Slab';
-	color: white;
-	transition: 0.3s;
-}
-.menu-item:hover{
-	background-color: #184996;
-}
-.active-menu-item{
-	background-color: #184996;
-}*/
-
-
 /* Oldal */
 h1, h2, h3, h4, h5, h6{
 	font-weight: 400;
@@ -208,9 +187,19 @@ h1, h2, h3, h4, h5, h6{
 	margin-left: 10px;
 	padding-left: 5px;
 }
+.page-container h4{
+	border-left: 2px solid #333;
+	margin-left: 15px;
+	padding-left: 5px;
+}
 .page-container p{
-	font-family: 'open sans', Arial, sans-serif;
+	font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
 	margin-left: 20px;
+}
+.page-container ul{
+	font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+	font-size: 0.9em;
 }
 .page-container{
 	width: 80%;
@@ -227,4 +216,23 @@ h1, h2, h3, h4, h5, h6{
 		box-sizing: border-box;
 	}
 }
-
+.noborder{
+	border: none;
+}
+.page-container .bordertable{
+	border: 1px solid black;
+}
+.page-container .bordertable td{
+	border: 1px solid black;
+	padding: 5px;
+}
+.page-container .bordertable caption{
+	font-style: italic;
+	font-weight: bolder;
+}
+a{
+	color: #4283f4;
+}
+a:hover{
+	color: #41a6f4;
+}
