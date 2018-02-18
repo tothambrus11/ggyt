@@ -131,12 +131,13 @@ nav #showmenu{
 	color: white;
 	font-family: 'Open Sans';
 	cursor: pointer;
+	transition: 0.3s;
 }
 nav #showmenu:focus{
 	outline: none;
 }
 nav #showmenu:hover{
-	transition: 0.3s;
+	
 	background-color: #184996;
 }
 @media screen and (max-width: 768px) {
@@ -252,7 +253,7 @@ footer a{
 	color: #fff;
 }
 .footer-item{
-	width: calc(50%-40px);
+	width: calc(50vw - 40px);
 	box-sizing: border-box;
 	padding: 20px;
 	
@@ -270,4 +271,22 @@ footer a{
 #hirek a{
 	padding-left: 20px;
 	display: block;
+}
+.adatlap td{
+	vertical-align: top;
+	padding: 10px;
+}
+.button{
+	padding: 10px;
+	color: white;
+	background-color: #0f52ba;
+	border: none;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+.button:hover{
+	text-decoration: none;
+	color: white;
+	background-color: #184996;
 }
